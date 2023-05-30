@@ -1,0 +1,208 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(63, 62, 62);
+    color: white;
+    font: 200 14px 'Popins' , 'sans-serif';
+}
+h2{
+    font-size: 36px; /*Tamaño de letra*/
+    line-height: 36px; /*configura el espacio entre la lineas de texto*/
+}
+h3{
+    color: rgb(61, 59, 59);
+    font-size: 10px;
+    font-weight: 300;
+}
+nav{
+    position: fixed; /*Para que se mueva mi menú de navegación*/
+    width: 100%;
+    height: 55px;
+    background-color: black;
+    border-bottom: 1px solid white;
+    padding-top: 10px;
+    text-align: center;
+}
+nav ul{
+    display: inline-block;
+}
+nav ul li{
+    padding-top: 12px;
+}
+section{
+    padding: 10px 100px 10px 100px;
+}
+p{
+    text-align: justify;
+}
+cite{
+    font-weight: 300; /*Groso de letra de cite*/
+}
+i{
+    font-size: 24px;
+}
+i:hover{
+    color: goldenrod;
+
+}
+a:any-link{
+    color: white;
+}
+a:-webkit-any{
+    color: white
+}
+a:-moz-any-link{
+    color: white
+}
+ul{
+    list-style: none; /*Para quitar los puntos plancos de la lisa*/
+}
+li{
+    float: left;
+    margin-right: 5px;
+}
+button{
+    border-radius: 10px;
+}
+footer{
+    height: 55px;
+    padding-top: 10px;
+    text-align: center;
+}
+footer ul{
+    display: inline-block;
+}
+footer ul li{
+    float: left;
+}
+/**********************************************/
+/*CSS Clases y los ID*/
+.hastag {
+    color: darkgoldenrod;
+}
+.seccion {
+    padding: 10px 100px 10px 100px;
+}
+.logo{
+    padding-top: 0px;
+}
+#redessociales{
+    margin-top: 20px;
+    list-style: none;
+}
+#inicio{
+    background-image: url("../img/inicio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 280px;
+    padding-top: 75px;
+
+}
+#experiencia{
+    background-color: white;
+    color: #222;
+}
+#portafolio{
+    border-top: 1px solid #ffc900; /*pra la linea amarilla*/
+}
+.masinfo button{
+    background-color: #ffc900;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+    padding: 5px;
+}   
+
+
+/*******************Cards Portafolio************/
+.filaportafolio{
+    display: flex; /*Flex box*/
+    flex-direction: row; /*Los cuatro elementos div están en fila*/
+    flex-wrap: wrap; /*Si no hay espacio se pone en columna (Responsive)*/
+    justify-content: space-between; /*Espacios equisdistantes*/
+    gap: 30px 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.card{
+    width: 250px;
+    background-color: #191919;
+    border-radius: 15px;
+}
+.card img .card video{
+    border-radius: 15px 15px 0 0;
+}
+.card h3{
+    color: #ffc900;
+}
+.card h4{
+    margin: 0 5px 5px 0;
+}
+.card h3, .cardh4, .card p, .card .masinfo{
+    padding: 0,15px;
+}
+.card .masinfo{
+    margin: 15px 0px 15px 0px;
+    height: 26px;
+}
+.card .sep{
+    margin: 0 5px 2px 0;
+}
+.card .masinfo button{
+    float: right;
+}
+/*************************************** Card Experiencia ***********************************/
+.gripexp{
+    display: grid;
+    grid-template-columns: repeat(4,350px);
+    grid-gap: 10px;
+    justify-content: space-between;
+    align-content: space-around;
+}
+.cardexp{
+    background-color: #222;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 15px;
+}
+.cardexp h2{
+    margin-bottom: 5px;
+}
+.cardexp h3{
+    margin-bottom: 20px;
+}
+.cardexp p{
+    margin-bottom: 20px;
+}
+.cardexp ul{
+    display: flex;
+    justify-content: flex-end;
+}
+.cardexp li{
+    height: 30px;
+}
+/********************************************************* FORMULARIO ******************************************************/
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.itemform label{
+    font-weight: 700;
+}
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1px solid white;
+}
+input[type="submit"]{
+    background-color: #222;
+    border: 1px solid #222;
+    color: white;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
+}
