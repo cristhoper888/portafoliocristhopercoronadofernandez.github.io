@@ -155,7 +155,7 @@ footer ul li{
     float: right;
 }
 /*************************************** Card Experiencia ***********************************/
-.gridexp {
+.gridexp{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -191,7 +191,6 @@ footer ul li{
 }
 .cardexp li{
     height: 30px;
-    margin-right: auto;
 }
 /********************************************************* FORMULARIO ******************************************************/
 .itemform{
